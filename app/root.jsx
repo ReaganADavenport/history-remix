@@ -13,6 +13,12 @@ export const meta = () => ({
   viewport: "width=device-width,initial-scale=1",
 });
 
+import styles from './styles.css';
+
+export function links() {
+  return[{ rel: "stylesheet", href: styles}];
+}
+
 export default function App() {
   return (
     <html lang="en">

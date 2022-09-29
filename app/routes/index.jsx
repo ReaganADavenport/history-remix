@@ -1,6 +1,12 @@
+import styles from './index.css';
+
+export function links() {
+  return[{ rel: "stylesheet", href: styles}];
+}
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <div className="Body">
       <h1>Welcome to History Finds</h1>
       <ul>
         <li>
@@ -10,20 +16,6 @@ export default function Index() {
             rel="noreferrer"
           >
             15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
           </a>
         </li>
       </ul>
